@@ -1,0 +1,11 @@
+<ul class="list-group">
+    <li *ngFor = "let i of tasks" class="list-group-item">
+        <div class="row">
+            <div class="col-1">{{i.id}}</div>
+            <div class="col-3">{{i.name}}</div>
+            <div class="col-2">
+                <button (click)="deleteTask(i)">Delete Task</button>
+            </div>
+        </div>
+    </li>
+</ul>
